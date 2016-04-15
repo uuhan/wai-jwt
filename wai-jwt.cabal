@@ -22,8 +22,12 @@ library
         Network.Test.Yesod
     build-depends:     base >=4.8 && < 4.9
                      , jwt
+                     , time
+                     , text
+                     , bytestring
                      , wai
                      , wai-extra
+                     , case-insensitive >=0.2 && <1.3
                      , http-types
                      , yesod
                      , yesod-static
