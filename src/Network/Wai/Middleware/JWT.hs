@@ -16,6 +16,8 @@ import           Data.ByteString (ByteString)
 import           Data.Text.Encoding (decodeUtf8)
 import           Data.CaseInsensitive (mk)
 
+import           Prelude hiding (exp)
+
 jwt :: Text -> ByteString -> Middleware
 jwt sec jwtKey app req sendRsp = 
     let jwtAuth v = do
